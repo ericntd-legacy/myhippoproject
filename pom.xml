@@ -12,7 +12,7 @@
   <description>My Hippo Project</description>
   <groupId>org.example</groupId>
   <artifactId>myhippoproject</artifactId>
-  <version>1.01.00-SNAPSHOT</version>
+  <version>1.01.01-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <!-- 
@@ -207,7 +207,6 @@
   </build>
 
   <profiles>
-
     <profile>
       <id>default</id>
       <activation>
@@ -225,9 +224,46 @@
     </profile>
 
     <profile>
+      <id>springloaded</id>
+      <activation>
+        <property>
+          <name>springloaded</name>
+        </property>
+      </activation>
+      <properties>
+        <javaagent>-javaagent:/usr/local/Cellar/spring-loaded/1.2.0/share/java/springloaded.jar</javaagent>
+      </properties>
+    </profile>
+
+    <profile>
       <id>cargo.run</id>
       <build>
         <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>copy-tomcat-resources</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.directory}/contexts</outputDirectory>
+                  <resources>
+                    <resource>
+                      <directory>conf</directory>
+                      <includes>
+                        <include>*-context.xml</include>
+                      </includes>
+                      <filtering>true</filtering>
+                    </resource>
+                  </resources>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
           <plugin>
             <groupId>org.codehaus.cargo</groupId>
             <artifactId>cargo-maven2-plugin</artifactId>
@@ -237,11 +273,19 @@
                   <catalina.servlet.uriencoding>UTF-8</catalina.servlet.uriencoding>
                 </properties>
                 <configfiles>
+
                   <configfile>
                     <file>${project.basedir}/conf/context.xml</file>
                     <todir>conf/</todir>
                     <tofile>context.xml</tofile>
                   </configfile>
+                  <!--
+                  <configfile>
+                    <file>${project.build.directory}/contexts/site-context.xml</file>
+                    <todir>conf/Catalina/localhost/</todir>
+                    <tofile>site.xml</tofile>
+                  </configfile>
+                  -->
                 </configfiles>
               </configuration>
               <deployables>

@@ -12,6 +12,12 @@
     <sv:property sv:name="hst:componentclassname" sv:type="String">
       <sv:value>org.onehippo.cms7.essentials.components.EssentialsSearchComponent</sv:value>
     </sv:property>
+    <sv:property sv:name="hst:parameternames" sv:type="String" sv:multiple="true">
+      <sv:value>documentTypes</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:parametervalues" sv:type="String" sv:multiple="true">
+      <sv:value>myhippoproject:contentdocument,myhippoproject:newsdocument,myhippoproject:productdocument</sv:value>
+    </sv:property>
     <sv:property sv:name="hst:template" sv:type="String">
       <sv:value>search-main</sv:value>
     </sv:property>

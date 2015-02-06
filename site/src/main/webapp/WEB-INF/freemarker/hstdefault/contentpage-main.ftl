@@ -1,4 +1,4 @@
-    <#include "/WEB-INF/freemarker/include/imports.ftl">
+<#include "/WEB-INF/freemarker/include/imports.ftl">
 <#--
   Copyright 2014 Hippo B.V. (http://www.onehippo.com)
 
@@ -17,19 +17,19 @@
 <#-- @ftlvariable name="document" type="org.example.beans.ContentDocument" -->
 
 <#if document??>
-  <@hst.link var="link" hippobean=document/>
-  <div class="yui-main">
+    <@hst.link var="link" hippobean=document/>
+<div class="yui-main">
     <div id="content" class="yui-b left-and-right">
-      <div id="article" class="about ">
-        <@hst.cmseditlink hippobean=document/>
-        <h2 class="title">${document.title}</h2>
-        <#if document.introduction??>
-          <p class="intro">${document.introduction}</p>
-        </#if>
-        <div class="yui-cssbase body">
-          <@hst.html hippohtml=document.content/>
+        <div id="article" class="about ">
+            <@hst.cmseditlink hippobean=document/>
+            <h2 class="title">${document.title}</h2>
+            <#if document.introduction??>
+                <p class="intro">${document.introduction}</p>
+            </#if>
+            <div class="yui-cssbase body">
+                <@hst.html hippohtml=document.content/>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </#if>

@@ -96,4 +96,60 @@
       <sv:value>freemarker/myhippoproject/contentlist-main-contentlist.ftl</sv:value>
     </sv:property>
   </sv:node>
+  <sv:node sv:name="threecolumns-main">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/threecolumns-main.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="threecolumns-left-menu">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/threecolumns-left-menu.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="productlist">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/productslist.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="productpage-main">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/productpage-main.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="featured-products">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/featured-products.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="faceted-navigation">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/faceted-navigation.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="productpage-reviews">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>freemarker/myhippoproject/productpage-reviews.ftl</sv:value>
+    </sv:property>
+  </sv:node>
 </sv:node>
