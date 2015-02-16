@@ -50,19 +50,20 @@ public class Productdocument extends BaseDocument {
 	}
 
 	public Double getAverageRating() {
+		log.info("getAverageRating");
 		double averageRating = 0.0;
 		try {
 			Session session = getNode().getSession();
 			QueryManager queryManager = session.getWorkspace().getQueryManager();
 			String language = Query.XPATH;
-			String expression = "//element(*,gogreen:averagerating)[@gogreen:subject='" + this.getCanonicalHandleUUID()
+			String expression = "//element(*,myhippoproject:averagerating)[@myhippoproject:subject='" + this.getCanonicalHandleUUID()
 					+ "']";
 			Query query = queryManager.createQuery(expression, language);
 			QueryResult result = query.execute();
 			NodeIterator nodes = result.getNodes();
 			if (nodes.hasNext()) {
 				javax.jcr.Node ratingNode = nodes.nextNode();
-				averageRating = ratingNode.getProperty("gogreen:rating").getDouble();
+				averageRating = ratingNode.getProperty("myhippoproject:rating").getDouble();
 			}
 		} catch (RepositoryException e) {
 			log.error("Failed to retrieve average rating for product document {}", getCanonicalHandleUUID(), e);

@@ -1,4 +1,5 @@
 <#include "/WEB-INF/freemarker/include/imports.ftl">
+<h1>springloaded2</h1>
 <#if pageable??>
 <div class="yui-main">
     <div id="content" class="yui-b left-and-right">

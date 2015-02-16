@@ -10,8 +10,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.onehippo.cms7:hippo-cms7-commons:1.04.02" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.onehippo.cms7:hippo-services:1.04.02" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.onehippo.cms7:hippo-repository-api:2.26.09" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.onehippo.cms7:hippo-repository-builtin:2.26.09" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.onehippo.cms7:hippo-repository-api:2.26.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.onehippo.cms7:hippo-repository-builtin:2.26.10" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />

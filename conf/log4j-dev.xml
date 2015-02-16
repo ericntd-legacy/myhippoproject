@@ -11,7 +11,7 @@
     <param name="File" value="${catalina.base}/logs/hippo-cms.log"/>
     <param name="Append" value="true"/>
     <layout class="org.apache.log4j.PatternLayout">
-      <param name="ConversionPattern" value="%d{dd.MM.yyyy HH:mm:ss} %-5p %t [%C{1}.%M:%L] %m%n"/>
+      <param name="ConversionPattern" value="%d{dd.MM.yyyy HH:mm:ss} %-5p [%C{1}] %m%n"/>
     </layout>
     <filter class="org.onehippo.cms7.logging.log4j.MdcOrJndiPropertyFilter">
       <param name="name" value="logging/contextName" />
@@ -26,7 +26,7 @@
     <param name="File" value="${catalina.base}/logs/hippo-site.log"/>
     <param name="Append" value="true"/>
     <layout class="org.apache.log4j.PatternLayout">
-      <param name="ConversionPattern" value="%d{dd.MM.yyyy HH:mm:ss} %-5p %t [%C{1}.%M:%L] %m%n"/>
+      <param name="ConversionPattern" value="%d{dd.MM.yyyy HH:mm:ss} %-5p [%C{1}] %m%n"/>
     </layout>
     <filter class="org.onehippo.cms7.logging.log4j.MdcOrJndiPropertyFilter">
       <param name="name" value="logging/contextName" />
@@ -150,7 +150,7 @@
   </logger>
 
   <root>
-    <level value="warn"/>
+    <level value="info"/>
     <appender-ref ref="site"/>
     <appender-ref ref="cms"/>
     <appender-ref ref="console"/>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="a">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>nt:unstructured</sv:value>
+  </sv:property>
+  <sv:node sv:name="2">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>nt:unstructured</sv:value>
+    </sv:property>
+    <sv:node sv:name="ea2f19eb-0f0f-45ed-9e26-e19e294de709">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>myhippoproject:averagerating</sv:value>
+      </sv:property>
+      <sv:property sv:name="myhippoproject:rating" sv:type="Double">
+        <sv:value>3.6923076923076925</sv:value>
+      </sv:property>
+      <sv:property sv:name="myhippoproject:subject" sv:type="String">
+        <sv:value>ea2f19eb-0f0f-45ed-9e26-e19e294de709</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>
